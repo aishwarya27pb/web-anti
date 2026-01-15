@@ -17,6 +17,8 @@
 </head>
 
 <body>
+  <div class="cursor-dot" data-cursor-dot></div>
+  <div class="cursor-outline" data-cursor-outline></div>
   <div id="app">
     <div id="scroll-progress"></div>
     <!-- To be populated or structure directly here -->
@@ -37,6 +39,7 @@
 
     <!-- Hero Section -->
     <header class="hero">
+      <canvas id="particle-canvas"></canvas>
       <div class="container hero-content">
         <p class="eyebrow">Hello, I'm Aishwarya P B</p>
         <h1>Ensuring Digital Excellence through <span class="text-accent">Precision Testing</span>.</h1>
@@ -246,6 +249,7 @@
     </section>
 
   </div>
+  <button id="scroll-top" class="btn-scroll-top" aria-label="Scroll to top">↑</button>
   <script type="module" src="/main.js"></script>
 </body>
 

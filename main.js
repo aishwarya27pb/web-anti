@@ -1,6 +1,58 @@
 import './style.css'
+import ParticleNetwork from './particles.js';
+import VanillaTilt from 'vanilla-tilt';
 
 console.log('Portfolio initialized');
+
+// Initialize Particles
+new ParticleNetwork('particle-canvas');
+
+// Initialize Tilt
+VanillaTilt.init(document.querySelectorAll(".project-card"), {
+    max: 15,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.2,
+    scale: 1.05
+});
+
+// Scroll to Top Logic
+const scrollTopBtn = document.getElementById('scroll-top');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        scrollTopBtn.classList.add('visible');
+    } else {
+        scrollTopBtn.classList.remove('visible');
+    }
+});
+
+scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// Custom Cursor Logic
+const cursorDot = document.querySelector('[data-cursor-dot]');
+const cursorOutline = document.querySelector('[data-cursor-outline]');
+
+window.addEventListener('mousemove', (e) => {
+    const posX = e.clientX;
+    const posY = e.clientY;
+
+    // Dot follows cursor instantly
+    cursorDot.style.left = `${posX}px`;
+    cursorDot.style.top = `${posY}px`;
+
+    // Outline follows with slight delay/animation via CSS or just raw position with animate
+    // Using animate for smoother trailing effect
+    cursorOutline.animate({
+        left: `${posX}px`,
+        top: `${posY}px`
+    }, { duration: 500, fill: "forwards" });
+});
 
 // Mobile Menu Toggle (can add later)
 // Scroll Animations (can add later)
