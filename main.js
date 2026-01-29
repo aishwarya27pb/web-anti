@@ -16,6 +16,31 @@ VanillaTilt.init(document.querySelectorAll(".project-card"), {
     scale: 1.05
 });
 
+// Initialize Mermaid only if container exists
+const initMermaid = () => {
+    if (document.querySelector('.mermaid')) {
+        const script = document.createElement('script');
+        script.src = 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js';
+        script.onload = () => {
+            mermaid.initialize({
+                startOnLoad: true,
+                theme: 'dark',
+                securityLevel: 'loose',
+                themeVariables: {
+                    primaryColor: '#22d3ee',
+                    primaryTextColor: '#fff',
+                    primaryBorderColor: '#22d3ee',
+                    lineColor: '#22d3ee',
+                    secondaryColor: '#1e293b',
+                    tertiaryColor: '#0f172a'
+                }
+            });
+        };
+        document.head.appendChild(script);
+    }
+};
+initMermaid();
+
 // Scroll to Top Logic
 const scrollTopBtn = document.getElementById('scroll-top');
 
@@ -43,15 +68,10 @@ window.addEventListener('mousemove', (e) => {
     const posY = e.clientY;
 
     // Dot follows cursor instantly
-    cursorDot.style.left = `${posX}px`;
-    cursorDot.style.top = `${posY}px`;
+    cursorDot.style.transform = `translate3d(${posX}px, ${posY}px, 0) translate(-50%, -50%)`;
 
-    // Outline follows with slight delay/animation via CSS or just raw position with animate
-    // Using animate for smoother trailing effect
-    cursorOutline.animate({
-        left: `${posX}px`,
-        top: `${posY}px`
-    }, { duration: 500, fill: "forwards" });
+    // Outline follows with slight delay via CSS transition
+    cursorOutline.style.transform = `translate3d(${posX}px, ${posY}px, 0) translate(-50%, -50%)`;
 });
 
 // Mobile Menu Toggle (can add later)
@@ -110,9 +130,12 @@ const scrollSpyObserver = new IntersectionObserver((entries) => {
     });
 }, scrollSpyOptions);
 
-sections.forEach(section => {
-    if (section.id) scrollSpyObserver.observe(section);
-});
+// Only run scroll spy on pages with multiple sections (like index.html)
+if (sections.length > 3) {
+    sections.forEach(section => {
+        if (section.id) scrollSpyObserver.observe(section);
+    });
+}
 
 // Scroll Progress Bar
 window.addEventListener('scroll', () => {

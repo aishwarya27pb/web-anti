@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Life OS Rivo Bot - Aishwarya P B</title>
+    <meta name="description"
+        content="Technical deep dive into the Life OS Rivo Bot, built on Raspberry Pi for personal automation." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <div id="app">
+        <div id="scroll-progress"></div>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="container nav-content">
+                <div class="logo"><a href="/index.html" style="color: inherit; text-shadow: none;">Aishwarya<span
+                            class="text-accent">.QA</span></a></div>
+                <ul class="nav-links">
+                    <li><a href="/index.html#about">About</a></li>
+                    <li><a href="/index.html#skills">Skills</a></li>
+                    <li><a href="/index.html#experience">Experience</a></li>
+                    <li><a href="/index.html#projects">Projects</a></li>
+                    <li><a href="/blog.html" class="active">Blog</a></li>
+                    <li><a href="/index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Background Canvas -->
+        <div class="blog-hero-bg">
+            <canvas id="particle-canvas"></canvas>
+        </div>
+
+        <!-- Blog Section -->
+        <main class="blog-page-content">
+            <div class="container">
+                <div class="back-link-container">
+                    <a href="/index.html" class="btn-back">← Back to Portfolio</a>
+                </div>
+
+                <article class="blog-post-full" style="margin-bottom: 4rem;">
+                    <div class="blog-header">
+                        <div class="tech-badge-row">
+                            <span class="badge"><img
+                                    src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"
+                                    alt="Node.js"></span>
+                            <span class="badge"><img
+                                    src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white"
+                                    alt="Raspberry Pi"></span>
+                            <span class="badge"><img
+                                    src="https://img.shields.io/badge/Antigravity-4285F4?style=for-the-badge&logo=google&logoColor=white"
+                                    alt="Google Antigravity"></span>
+                        </div>
+                        <h1>RIVO: The Telegram Bot That Dragged Me Into Tech Land</h1>
+                        <p class="blog-meta">By Aishwarya P B | QA Automation Engineer & AI Enthusiast</p>
+                    </div>
+
+                    <div class="blog-body">
+                        <p class="hook">Every great adventure starts with a bit of confusion. For me, it started with a
+                            "soft restart" and a whole lot of buffering.</p>
+
+                        <h3>The Day I Learned What a Bot Actually Is</h3>
+                        <p>There was a time when "bot" sounded like something lurking in sci-fi shadows. Then my friend
+                            casually announced, <em>"Let's build a Telegram bot using Raspberry Pi,"</em> and my brain
+                            did a soft restart. I nodded, but internally I was buffering.</p>
+
+                        <h3>From Confusion to Curiosity</h3>
+                        <p>In the early days, everything felt like staring into fog. But the more we discussed, the more
+                            the picture sharpened. Soon we were on the hunt for the right AI tool to help us build our
+                            telebot, and after strolling through a forest of options, Google's
+                            <strong>Antigravity</strong> stood there like a digital guide waving a glowing stick.
+                        </p>
+                        <p>We chose wisely.</p>
+
+                        <hr class="blog-divider">
+
+                        <h2>Phase One: Birth of RIVO</h2>
+
+                        <h3>Tiny Steps That Weren't Actually Tiny</h3>
+                        <p>We began with baby steps:</p>
+                        <ul>
+                            <li>Adding a few commands</li>
+                            <li>Setting up admin access</li>
+                            <li>Teaching the bot to list tasks without whining</li>
+                        </ul>
+                        <p>RIVO learned faster than expected. Then came the big dream — integrating a habit tracker.
+                            Because nothing says "self-improvement" like a bot nagging you about your tasks.</p>
+
+                        <h3>Antigravity, Our Silent Co-engineer</h3>
+                        <p>Every time we tossed a requirement at Antigravity, it returned something useful. Considerate,
+                            efficient, and never once asked for coffee.</p>
+
+                        <hr class="blog-divider">
+
+                        <h2>Feature Fiesta</h2>
+                        <h3>Leveling Up the Bot</h3>
+                        <p>The upgrades rolled in:</p>
+                        <ul>
+                            <li>Multiple admin access</li>
+                            <li>Replacing approval commands with clean little buttons</li>
+                            <li>A <code>/ip</code> command that whispered device IPs like a friendly neighborhood spy
+                            </li>
+                        </ul>
+                        <p>At this point, RIVO wasn't just a bot. It was a productivity sidekick.</p>
+
+                        <hr class="blog-divider">
+
+                        <h2>The Plot Twist</h2>
+                        <h3>The Day RIVO Went Silent</h3>
+                        <p>Everything was running smoothly... until RIVO decided to take an unapproved vacation. No
+                            responses. No errors. Just digital crickets.</p>
+                        <p>We dove into debugging mode. Logs everywhere. Guessing games. Our AI assistant joined the
+                            investigation like a detective who charges per clue.</p>
+
+                        <h3>The Culprit: A Timeout</h3>
+                        <p>After enough troubleshooting to qualify us for a mini PhD, we found it — a timeout error
+                            masquerading as a grand crisis. Classic.</p>
+
+                        <hr class="blog-divider">
+
+                        <h2>What's Next for RIVO</h2>
+                        <h3>The Adventure Has Only Booted Up</h3>
+                        <p>Phase One may be complete, but the roadmap ahead is buzzing with features, integrations, and
+                            ideas that may or may not cause future plot twists.</p>
+                        <p>But hey, that's the charm of building something from scratch.</p>
+
+                        <p class="cta"><strong>Stay tuned — more chaos loading...</strong></p>
+                    </div>
+                </article>
+
+                </article>
+            </div>
+        </main>
+
+        <!-- Contact Section / Footer -->
+        <footer class="footer container" style="margin-bottom: 2rem;">
+            <p>&copy; 2026 Aishwarya P B. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+    <button id="scroll-top" class="btn-scroll-top" aria-label="Scroll to top">↑</button>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>

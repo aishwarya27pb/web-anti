@@ -36,10 +36,14 @@
     position: fixed;
     top: 0;
     left: 0;
-    transform: translate(-50%, -50%);
     border-radius: 50%;
     z-index: 9999;
     pointer-events: none;
+    will-change: transform;
+}
+
+.cursor-outline {
+    transition: transform 0.1s ease-out;
 }
 
 #scroll-progress {
@@ -542,4 +546,205 @@ section {
 .btn-scroll-top:hover {
     background: #fff;
     transform: translateY(-5px);
+}
+
+/* Blog Section & Standalone Page */
+.blog-page-content {
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+}
+
+.blog-hero-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: radial-gradient(circle at top right, rgba(34, 211, 238, 0.05), transparent 40%);
+}
+
+.back-link-container {
+    margin-bottom: 2rem;
+}
+
+.btn-back {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.btn-back:hover {
+    color: var(--accent);
+}
+
+.blog-post-full {
+    background: var(--card-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 3rem;
+    backdrop-filter: blur(10px);
+}
+
+.blog-header {
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 2rem;
+}
+
+.tech-badge-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.tech-badge-row .badge img {
+    height: 25px;
+    border-radius: 4px;
+}
+
+.blog-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #fff, var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.blog-meta {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+.blog-body {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.blog-body h3 {
+    color: var(--accent);
+    margin: 2.5rem 0 1rem;
+    font-size: 1.5rem;
+}
+
+.blog-body p {
+    margin-bottom: 1.5rem;
+    color: #cbd5e1;
+}
+
+.blog-body ul {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+}
+
+.blog-body li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    list-style: none;
+}
+
+.blog-body li::before {
+    content: '→';
+    position: absolute;
+    left: -1.5rem;
+    color: var(--accent);
+}
+
+.blog-divider {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--glass-border), transparent);
+    margin: 3rem 0;
+}
+
+.hook {
+    font-size: 1.25rem;
+    color: #fff !important;
+    font-style: italic;
+}
+
+.cta {
+    background: rgba(34, 211, 238, 0.05);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent);
+    margin-top: 3rem;
+}
+
+/* Mermaid Styling */
+.mermaid-container {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--glass-border);
+}
+
+.mermaid {
+    background: transparent !important;
+}
+
+/* Table Styling */
+.table-container {
+    overflow-x: auto;
+    margin: 2rem 0;
+}
+
+.cheat-sheet-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(15, 23, 42, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.cheat-sheet-table th,
+.cheat-sheet-table td {
+    padding: 1.2rem;
+    text-align: left;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.cheat-sheet-table th {
+    background: rgba(34, 211, 238, 0.1);
+    color: var(--accent);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.cheat-sheet-table td code {
+    background: rgba(34, 211, 238, 0.15);
+    color: var(--accent);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+/* Mobile Adjustments for Blog */
+@media (max-width: 768px) {
+    .blog-page-content {
+        padding-top: 8rem;
+    }
+
+    .blog-post-full {
+        padding: 1.5rem;
+    }
+
+    .blog-header h1 {
+        font-size: 2rem;
+    }
+
+    .tech-badge-row {
+        gap: 0.5rem;
+    }
 }
