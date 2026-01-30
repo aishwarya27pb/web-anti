@@ -1,243 +1,278 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aishwarya P B | QA Specialist</title>
-    <meta name="description" content="Portfolio of Aishwarya P B, a Quality Assurance Specialist with 5+ years of experience in Automation (Selenium, Playwright) and Manual Testing." />
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
-    
-    <script type="module" crossorigin src="/assets/index-D5qoOHg_.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CQPvh-Hj.css">
-  </head>
-  <body>
-    <div id="app">
-      <!-- To be populated or structure directly here -->
-      
-      <!-- Navbar -->
-      <nav class="navbar">
-        <div class="container nav-content">
-          <div class="logo">Aishwarya<span class="text-accent">.QA</span></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aishwarya P B | QA Specialist</title>
+  <meta name="description"
+    content="Portfolio of Aishwarya P B, a Quality Assurance Specialist with 5+ years of experience in Automation (Selenium, Playwright) and Manual Testing." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap"
+    rel="stylesheet">
+
+  <script type="module" crossorigin src="/assets/main-CvTenoAX.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-uKI31dtO.css">
+</head>
+
+<body>
+  <div class="cursor-dot" data-cursor-dot></div>
+  <div class="cursor-outline" data-cursor-outline></div>
+  <div id="app">
+    <div id="scroll-progress"></div>
+    <!-- To be populated or structure directly here -->
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container nav-content">
+        <div class="logo">Aishwarya<span class="text-accent">.QA</span></div>
+        <div class="nav-right">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-      <!-- Hero Section -->
-      <header class="hero">
-        <div class="container hero-content">
-          <p class="eyebrow">Hello, I'm Aishwarya P B</p>
-          <h1>Ensuring Digital Excellence through <span class="text-accent">Precision Testing</span>.</h1>
-          <p class="subtitle">Quality Assurance Specialist with 5+ Years of Experience. Expert in Automation (Selenium, Playwright) and functional excellence.</p>
-          <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">View Projects</a>
-            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+    <!-- Hero Section -->
+    <header class="hero">
+      <canvas id="particle-canvas"></canvas>
+      <div class="container hero-content">
+        <p class="eyebrow">Hello, I'm Aishwarya P B</p>
+        <h1>Ensuring Digital Excellence through <span class="text-accent">Precision Testing</span>.</h1>
+        <p class="subtitle">Quality Assurance Specialist with 5+ Years of Experience. Expert in Automation (Selenium,
+          Playwright) and functional excellence.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-card">
+          <p>
+            I am a Quality Assurance specialist with nearly 6 years of experience in testing and analysis.
+            Proficient in test plan development, execution, and documentation with a keen eye for identifying areas of
+            improvement.
+            Adept at collaborating with cross-functional teams to maintain high-quality standards and foster a culture
+            of continuous improvement.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Technical Expertise</h2>
+        <div class="skills-grid">
+          <!-- Categories will be added via CSS/HTML structure -->
+          <div class="skill-category">
+            <h3>Automation Testing</h3>
+            <ul class="skill-list">
+              <li>Selenium</li>
+              <li>Playwright</li>
+              <li>Robot Framework</li>
+              <li>Cucumber (BDD)</li>
+              <li>TestNG</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Languages & DB</h3>
+            <ul class="skill-list">
+              <li>Java</li>
+              <li>TypeScript</li>
+              <li>SQL</li>
+              <li>Unix</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Tools & Lifecycle</h3>
+            <ul class="skill-list">
+              <li>JIRA (Agile)</li>
+              <li>HP ALM</li>
+              <li>Git & Jenkins</li>
+              <li>Postman (API)</li>
+            </ul>
           </div>
         </div>
-      </header>
+      </div>
+    </section>
 
-      <!-- About Section -->
-      <section id="about">
-        <div class="container">
-          <h2 class="section-title">About Me</h2>
-          <div class="about-card">
-            <p>
-              I am a Quality Assurance specialist with nearly 6 years of experience in testing and analysis. 
-              Proficient in test plan development, execution, and documentation with a keen eye for identifying areas of improvement. 
-              Adept at collaborating with cross-functional teams to maintain high-quality standards and foster a culture of continuous improvement.
-            </p>
-          </div>
-        </div>
-      </section>
+    <!-- Experience Section -->
+    <section id="experience">
+      <div class="container">
+        <h2 class="section-title">Professional Experience</h2>
 
-      <!-- Skills Section -->
-      <section id="skills">
-        <div class="container">
-          <h2 class="section-title">Technical Expertise</h2>
-          <div class="skills-grid">
-            <!-- Categories will be added via CSS/HTML structure -->
-            <div class="skill-category">
-              <h3>Automation Testing</h3>
-              <ul class="skill-list">
-                <li>Selenium</li>
-                <li>Playwright</li>
-                <li>Robot Framework</li>
-                <li>Cucumber (BDD)</li>
-                <li>TestNG</li>
+        <div class="timeline">
+          <!-- Role 1 -->
+          <div class="timeline-item">
+            <div class="timeline-date">Oct 2022 - Present</div>
+            <div class="timeline-content">
+              <h3>Tata Consultancy Services</h3>
+              <p class="role">Bangalore</p>
+              <ul class="job-details">
+                <li>Performed end-to-end functional and backend testing for large-scale enterprise apps.</li>
+                <li>Developed automated scripts using Playwright (TypeScript) and Selenium (Java).</li>
+                <li>Implemented reusable POM (Page Object Model) frameworks.</li>
+                <li>Conducted SQL database validation on Unix/Fabric environments.</li>
               </ul>
             </div>
-            <div class="skill-category">
-              <h3>Languages & DB</h3>
-              <ul class="skill-list">
-                <li>Java</li>
-                <li>TypeScript</li>
-                <li>SQL</li>
-                <li>Unix</li>
-              </ul>
-            </div>
-            <div class="skill-category">
-              <h3>Tools & Lifecycle</h3>
-              <ul class="skill-list">
-                <li>JIRA (Agile)</li>
-                <li>HP ALM</li>
-                <li>Git & Jenkins</li>
-                <li>Postman (API)</li>
+          </div>
+
+          <!-- Role 2 -->
+          <div class="timeline-item">
+            <div class="timeline-date">Jan 2020 - Oct 2022</div>
+            <div class="timeline-content">
+              <h3>Data Template InfoTech Pvt. Ltd</h3>
+              <p class="role">Bangalore</p>
+              <ul class="job-details">
+                <li>Executed manual and automation testing across web/enterprise apps.</li>
+                <li>Designed scripts using Selenium, Robot Framework, and Cucumber BDD.</li>
+                <li>Performed API/Web Service validation using Postman.</li>
+                <li>Collaborated with Agile teams to improve software quality.</li>
               </ul>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Experience Section -->
-      <section id="experience">
-        <div class="container">
-          <h2 class="section-title">Professional Experience</h2>
-          
-          <div class="timeline">
-            <!-- Role 1 -->
-            <div class="timeline-item">
-              <div class="timeline-date">Oct 2022 - Present</div>
-              <div class="timeline-content">
-                <h3>Tata Consultancy Services</h3>
-                <p class="role">Bangalore</p>
-                <ul class="job-details">
-                  <li>Performed end-to-end functional and backend testing for large-scale enterprise apps.</li>
-                  <li>Developed automated scripts using Playwright (TypeScript) and Selenium (Java).</li>
-                  <li>Implemented reusable POM (Page Object Model) frameworks.</li>
-                  <li>Conducted SQL database validation on Unix/Fabric environments.</li>
-                </ul>
-              </div>
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card">
+            <h3>Global Credit Risk System</h3>
+            <p class="project-role">QA Engineer</p>
+            <p class="project-desc">A large-scale financial application automating risk assessment and compliance
+              workflows.</p>
+            <div class="tech-stack">
+              <span>Unix</span><span>SQL</span><span>HP ALM</span><span>JIRA</span>
             </div>
+            <ul class="project-bullets">
+              <li>Developed detailed test scenarios based on business requirements.</li>
+              <li>Performed backend testing via SQL queries and Unix commands.</li>
+              <li>Validated data flows and reconciliation reports.</li>
+            </ul>
+          </article>
 
-            <!-- Role 2 -->
-            <div class="timeline-item">
-              <div class="timeline-date">Jan 2020 - Oct 2022</div>
-              <div class="timeline-content">
-                <h3>Data Template InfoTech Pvt. Ltd</h3>
-                <p class="role">Bangalore</p>
-                <ul class="job-details">
-                  <li>Executed manual and automation testing across web/enterprise apps.</li>
-                  <li>Designed scripts using Selenium, Robot Framework, and Cucumber BDD.</li>
-                  <li>Performed API/Web Service validation using Postman.</li>
-                  <li>Collaborated with Agile teams to improve software quality.</li>
-                </ul>
-              </div>
+          <!-- Project 2 -->
+          <article class="project-card">
+            <h3>Political Activities Management System (PAMS)</h3>
+            <p class="project-role">QA Analyst</p>
+            <p class="project-desc">Global platform for tracking employee activity requests and ensuring compliance.</p>
+            <div class="tech-stack">
+              <span>HP ALM</span><span>JIRA</span><span>Agile</span>
             </div>
+            <ul class="project-bullets">
+              <li>Designed workflow-based test cases for user management.</li>
+              <li>Validated rule-based workflows and notification triggers.</li>
+              <li>Managed defects and regression testing in Agile sprints.</li>
+            </ul>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <h3>Miles and More</h3>
+            <p class="project-role">Automation Test Engineer</p>
+            <p class="project-desc">Credit card loyalty platform associated with Lufthansa airlines.</p>
+            <div class="tech-stack">
+              <span>Playwright</span><span>Jenkins</span><span>CI/CD</span>
+            </div>
+            <ul class="project-bullets">
+              <li>Developed end-to-end automation scripts using Playwright.</li>
+              <li>Optimized regression suite by 30% through modular scripting.</li>
+              <li>Integrated tests into Jenkins CI pipelines.</li>
+            </ul>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card">
+            <h3>Whiteboard.chat</h3>
+            <p class="project-role">QA Engineer</p>
+            <p class="project-desc">Real-time collaboration platform for remote learning/classrooms.</p>
+            <div class="tech-stack">
+              <span>Selenium</span><span>Robot Framework</span>
+            </div>
+            <ul class="project-bullets">
+              <li>Designed automation for core workflows using Selenium/Robot Framework.</li>
+              <li>Ensured cross-browser compatibility.</li>
+              <li>Conducted exploratory and ad-hoc testing for new features.</li>
+            </ul>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card">
+            <h3>iFlight-Neo</h3>
+            <p class="project-role">QA Engineer</p>
+            <p class="project-desc">Web solution for flight scheduling and crew management.</p>
+            <div class="tech-stack">
+              <span>Rest API</span><span>Postman</span><span>HP ALM</span>
+            </div>
+            <ul class="project-bullets">
+              <li>Validated REST APIs/Web Services using Postman.</li>
+              <li>Performed integration & regression testing in Agile env.</li>
+              <li>Documented best QA practices.</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <p>Open to opportunities in Quality Assurance and Automation Engineering.</p>
+          <div class="contact-links">
+            <a href="mailto:pbaishwarya27@gmail.com" class="btn btn-primary">pbaishwarya27@gmail.com</a>
+            <a href="tel:+918217391001" class="btn btn-secondary">+91 8217391001</a>
           </div>
         </div>
-      </section>
+        <footer class="footer">
+          <p>&copy; 2026 Aishwarya P B. All Rights Reserved.</p>
+        </footer>
+      </div>
+    </section>
 
-      <!-- Projects Section -->
-      <section id="projects">
-        <div class="container">
-          <h2 class="section-title">Featured Projects</h2>
-          <div class="projects-grid">
-            
-            <!-- Project 1 -->
-            <article class="project-card">
-              <h3>Global Credit Risk System</h3>
-              <p class="project-role">QA Engineer</p>
-              <p class="project-desc">A large-scale financial application automating risk assessment and compliance workflows.</p>
-              <div class="tech-stack">
-                <span>Unix</span><span>SQL</span><span>HP ALM</span><span>JIRA</span>
-              </div>
-              <ul class="project-bullets">
-                 <li>Developed detailed test scenarios based on business requirements.</li>
-                 <li>Performed backend testing via SQL queries and Unix commands.</li>
-                 <li>Validated data flows and reconciliation reports.</li>
-              </ul>
-            </article>
+  </div>
+  <button id="scroll-top" class="btn-scroll-top" aria-label="Scroll to top">↑</button>
+</body>
 
-            <!-- Project 2 -->
-            <article class="project-card">
-              <h3>Political Activities Management System (PAMS)</h3>
-              <p class="project-role">QA Analyst</p>
-              <p class="project-desc">Global platform for tracking employee activity requests and ensuring compliance.</p>
-              <div class="tech-stack">
-                <span>HP ALM</span><span>JIRA</span><span>Agile</span>
-              </div>
-              <ul class="project-bullets">
-                 <li>Designed workflow-based test cases for user management.</li>
-                 <li>Validated rule-based workflows and notification triggers.</li>
-                 <li>Managed defects and regression testing in Agile sprints.</li>
-              </ul>
-            </article>
-
-            <!-- Project 3 -->
-            <article class="project-card">
-              <h3>Miles and More</h3>
-              <p class="project-role">Automation Test Engineer</p>
-              <p class="project-desc">Credit card loyalty platform associated with Lufthansa airlines.</p>
-              <div class="tech-stack">
-                <span>Playwright</span><span>Jenkins</span><span>CI/CD</span>
-              </div>
-              <ul class="project-bullets">
-                 <li>Developed end-to-end automation scripts using Playwright.</li>
-                 <li>Optimized regression suite by 30% through modular scripting.</li>
-                 <li>Integrated tests into Jenkins CI pipelines.</li>
-              </ul>
-            </article>
-
-            <!-- Project 4 -->
-            <article class="project-card">
-              <h3>Whiteboard.chat</h3>
-              <p class="project-role">QA Engineer</p>
-              <p class="project-desc">Real-time collaboration platform for remote learning/classrooms.</p>
-              <div class="tech-stack">
-                <span>Selenium</span><span>Robot Framework</span>
-              </div>
-              <ul class="project-bullets">
-                 <li>Designed automation for core workflows using Selenium/Robot Framework.</li>
-                 <li>Ensured cross-browser compatibility.</li>
-                 <li>Conducted exploratory and ad-hoc testing for new features.</li>
-              </ul>
-            </article>
-
-             <!-- Project 5 -->
-            <article class="project-card">
-              <h3>iFlight-Neo</h3>
-              <p class="project-role">QA Engineer</p>
-              <p class="project-desc">Web solution for flight scheduling and crew management.</p>
-              <div class="tech-stack">
-                <span>Rest API</span><span>Postman</span><span>HP ALM</span>
-              </div>
-              <ul class="project-bullets">
-                 <li>Validated REST APIs/Web Services using Postman.</li>
-                 <li>Performed integration & regression testing in Agile env.</li>
-                 <li>Documented best QA practices.</li>
-              </ul>
-            </article>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section id="contact">
-        <div class="container">
-          <h2 class="section-title">Get In Touch</h2>
-          <div class="contact-content">
-             <p>Open to opportunities in Quality Assurance and Automation Engineering.</p>
-             <div class="contact-links">
-               <a href="mailto:pbaishwarya27@gmail.com" class="btn btn-primary">pbaishwarya27@gmail.com</a>
-               <a href="tel:+918217391001" class="btn btn-secondary">+91 8217391001</a>
-             </div>
-          </div>
-          <footer class="footer">
-            <p>&copy; 2026 Aishwarya P B. All Rights Reserved.</p>
-          </footer>
-        </div>
-      </section>
-
-    </div>
-  </body>
 </html>

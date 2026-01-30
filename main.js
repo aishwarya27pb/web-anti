@@ -144,3 +144,46 @@ window.addEventListener('scroll', () => {
     const scrolled = (winScroll / height) * 100;
     document.getElementById('scroll-progress').style.width = scrolled + "%";
 });
+
+// Theme Switching
+const themeToggle = document.getElementById('theme-toggle');
+const htmlElement = document.documentElement;
+
+// Check for saved theme
+const savedTheme = localStorage.getItem('theme') || 'dark';
+htmlElement.setAttribute('data-theme', savedTheme);
+
+if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = htmlElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+        htmlElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+
+        // Re-initialize particles if needed for light mode colors
+        // For now, the existing particles work well enough on both
+    });
+}
+
+// Social Sharing Logic
+const shareLinkedIn = document.getElementById('share-linkedin');
+const shareX = document.getElementById('share-x');
+
+if (shareLinkedIn) {
+    shareLinkedIn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const url = window.location.href;
+        const title = document.title;
+        window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`, 'share-linkedin', 'width=600,height=400');
+    });
+}
+
+if (shareX) {
+    shareX.addEventListener('click', (e) => {
+        e.preventDefault();
+        const url = window.location.href;
+        const text = `Check out this post: ${document.title}`;
+        window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`, 'share-x', 'width=600,height=400');
+    });
+}
