@@ -1,8 +1,14 @@
 import './style.css'
 import ParticleNetwork from './particles.js';
 import VanillaTilt from 'vanilla-tilt';
+import { renderBlogCards } from './blog-loader.js';
 
 console.log('Portfolio initialized');
+
+// Initialize dynamic blog cards on home page
+if (document.getElementById('blog-cards')) {
+    renderBlogCards('blog-cards', 2);
+}
 
 // Initialize Particles
 new ParticleNetwork('particle-canvas');

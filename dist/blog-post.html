@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Post | Aishwarya P B</title>
+    <meta name="description" content="Blog post by Aishwarya P B" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+  <script type="module" crossorigin src="/assets/blog-post-DR44O1DL.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/blog-loader-CUtLAhke.js">
+  <link rel="stylesheet" crossorigin href="/assets/blog-loader-DBkVsu5h.css">
+</head>
+
+<body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <div id="app">
+        <div id="scroll-progress"></div>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="container nav-content">
+                <div class="logo"><a href="/index.html" style="color: inherit; text-shadow: none;">Aishwarya<span
+                            class="text-accent">.QA</span></a></div>
+                <div class="nav-right">
+                    <ul class="nav-links">
+                        <li><a href="/index.html#about">About</a></li>
+                        <li><a href="/index.html#skills">Skills</a></li>
+                        <li><a href="/index.html#experience">Experience</a></li>
+                        <li><a href="/index.html#projects">Projects</a></li>
+                        <li><a href="/blogs.html" class="active">Blog</a></li>
+                        <li><a href="https://aishwarya27pb.github.io/NeoFlap_game/" target="_blank"
+                                rel="noopener noreferrer">NeoFlap Game</a></li>
+                        <li><a href="/index.html#contact">Contact</a></li>
+                    </ul>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
+                        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Background Canvas -->
+        <div class="blog-hero-bg">
+            <canvas id="particle-canvas"></canvas>
+        </div>
+
+        <!-- Blog Post Content -->
+        <main class="blog-page-content">
+            <div class="container">
+                <div class="back-link-container">
+                    <a href="/blogs.html" class="btn-back">← Back to All Posts</a>
+                </div>
+
+                <!-- Dynamic content loads here -->
+                <div id="blog-post-container">
+                    <p style="text-align: center; padding: 4rem;">Loading post...</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer container" style="margin-bottom: 2rem;">
+            <p>&copy; 2026 Aishwarya P B. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+    <button id="scroll-top" class="btn-scroll-top" aria-label="Scroll to top">↑</button>
+
+</body>
+
+</html>

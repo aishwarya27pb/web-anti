@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog | Aishwarya P B - QA Specialist</title>
-    <meta name="description"
-        content="Technical blog posts by Aishwarya P B covering QA automation, testing strategies, and personal projects." />
+    <title>Blog Post | Aishwarya P B</title>
+    <meta name="description" content="Blog post by Aishwarya P B" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,18 +67,16 @@
             <canvas id="particle-canvas"></canvas>
         </div>
 
-        <!-- Blogs Listing -->
-        <main class="blogs-page-content">
+        <!-- Blog Post Content -->
+        <main class="blog-page-content">
             <div class="container">
                 <div class="back-link-container">
-                    <a href="/index.html" class="btn-back">← Back to Portfolio</a>
+                    <a href="/blogs.html" class="btn-back">← Back to All Posts</a>
                 </div>
 
-                <h1 class="section-title" style="margin-bottom: 3rem;">All Blog Posts</h1>
-
-                <!-- Dynamic blog list loaded via JavaScript -->
-                <div class="blogs-list" id="blog-list">
-                    <p style="text-align: center; padding: 3rem;">Loading posts...</p>
+                <!-- Dynamic content loads here -->
+                <div id="blog-post-container">
+                    <p style="text-align: center; padding: 4rem;">Loading post...</p>
                 </div>
             </div>
         </main>
@@ -95,13 +92,21 @@
     <script type="module">
         import './style.css';
         import ParticleNetwork from './particles.js';
-        import { renderBlogList } from './blog-loader.js';
+        import { renderSinglePost } from './blog-loader.js';
 
         // Initialize Particles
         new ParticleNetwork('particle-canvas');
 
-        // Load blog list dynamically
-        renderBlogList('blog-list');
+        // Get post slug from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const postSlug = urlParams.get('post');
+
+        if (postSlug) {
+            renderSinglePost(postSlug, 'blog-post-container');
+        } else {
+            document.getElementById('blog-post-container').innerHTML =
+                '<p style="text-align: center; padding: 4rem;">No post specified. <a href="/blogs.html">View all posts</a></p>';
+        }
 
         // Theme toggle
         const themeToggle = document.getElementById('theme-toggle');
