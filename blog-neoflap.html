@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building Neon Flap: My AI-Powered Game Development Journey | Aishwarya P B</title>
+    <meta name="description"
+        content="How I built a stunning cyberpunk arcade game in record time with AI assistance—and why this is just the beginning." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <div id="app">
+        <div id="scroll-progress"></div>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="container nav-content">
+                <div class="logo"><a href="/index.html" style="color: inherit; text-shadow: none;">Aishwarya<span
+                            class="text-accent">.QA</span></a></div>
+                <div class="nav-right">
+                    <ul class="nav-links">
+                        <li><a href="/index.html#about">About</a></li>
+                        <li><a href="/index.html#skills">Skills</a></li>
+                        <li><a href="/index.html#experience">Experience</a></li>
+                        <li><a href="/index.html#projects">Projects</a></li>
+                        <li><a href="/blogs.html" class="active">Blog</a></li>
+                        <li><a href="https://aishwarya27pb.github.io/NeoFlap_game/" target="_blank"
+                                rel="noopener noreferrer">NeoFlap Game</a></li>
+                        <li><a href="/index.html#contact">Contact</a></li>
+                    </ul>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
+                        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Background Canvas -->
+        <div class="blog-hero-bg">
+            <canvas id="particle-canvas"></canvas>
+        </div>
+
+        <!-- Blog Section -->
+        <main class="blog-page-content">
+            <div class="container">
+                <div class="back-link-container">
+                    <a href="/blogs.html" class="btn-back">← Back to All Posts</a>
+                </div>
+
+                <article class="blog-post-full">
+                    <div class="blog-header">
+                        <div class="tech-badge-row">
+                            <span class="badge"><img
+                                    src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+                                    alt="JavaScript" loading="lazy"></span>
+                            <span class="badge"><img
+                                    src="https://img.shields.io/badge/Canvas_2D-FF6F00?style=for-the-badge&logo=html5&logoColor=white"
+                                    alt="Canvas 2D" loading="lazy"></span>
+                            <span class="badge"><img
+                                    src="https://img.shields.io/badge/AI_Assisted-4285F4?style=for-the-badge&logo=google&logoColor=white"
+                                    alt="AI Assisted" loading="lazy"></span>
+                        </div>
+                        <h1>🚀 Building Neon Flap: My AI-Powered Game Development Journey</h1>
+                        <p class="blog-meta">By Aishwarya P B | February 2026</p>
+                    </div>
+
+                    <div class="blog-body">
+                        <p class="hook">How I built a stunning cyberpunk arcade game in record time with AI
+                            assistance—and why this is just the beginning.</p>
+
+                        <hr class="blog-divider">
+
+                        <h3>✨ The Spark</h3>
+                        <p>It started with a simple idea: <strong>What if Flappy Bird met Cyberpunk 2077?</strong></p>
+                        <p>I didn't just want another clone. I wanted something that would make players <em>feel</em>
+                            something the moment the page loaded—neon glows pulsing, particles exploding, a city skyline
+                            scrolling in the distance. The kind of game that screams "premium" from every pixel.</p>
+                        <p>The problem? Building something this polished traditionally takes weeks. I had hours.</p>
+                        <p><strong>Enter AI-assisted development.</strong></p>
+
+                        <hr class="blog-divider">
+
+                        <h3>🤖 The AI Partnership</h3>
+                        <p>This wasn't about asking an AI to "write me a game." It was a <em>collaboration</em>—a
+                            back-and-forth dance where I brought the vision and the AI helped architect, code, and
+                            refine at lightning speed.</p>
+
+                        <h4>What AI Helped Me Build:</h4>
+                        <div class="table-container">
+                            <table class="cheat-sheet-table">
+                                <thead>
+                                    <tr>
+                                        <th>Feature</th>
+                                        <th>Traditional Time</th>
+                                        <th>With AI</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Canvas game loop architecture</td>
+                                        <td>2-3 days</td>
+                                        <td><code>30 minutes</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Particle explosion system</td>
+                                        <td>1 day</td>
+                                        <td><code>15 minutes</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Parallax scrolling cityscape</td>
+                                        <td>4-6 hours</td>
+                                        <td><code>10 minutes</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Difficulty system (Easy/Medium/Hard)</td>
+                                        <td>2-3 hours</td>
+                                        <td><code>5 minutes</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Glassmorphism UI overlays</td>
+                                        <td>3-4 hours</td>
+                                        <td><code>10 minutes</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Neon glow effects & polish</td>
+                                        <td>Half a day</td>
+                                        <td><code>20 minutes</code></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p><strong>Total estimated traditional time:</strong> ~5 days<br>
+                            <strong>Actual time with AI:</strong> ~2 hours
+                        </p>
+                        <p>That's not a typo. That's the power of AI-assisted development.</p>
+
+                        <hr class="blog-divider">
+
+                        <h3>🎮 What We Created</h3>
+                        <p><strong>Neon Flap</strong> isn't just a game—it's an experience:</p>
+
+                        <h4>🐦 The Bird</h4>
+                        <p>A glowing cyan orb with a trailing motion blur that makes every jump feel fluid and alive.
+                            The inner white glow creates a "plasma core" effect that pulses with energy.</p>
+
+                        <h4>🏙️ The Cityscape</h4>
+                        <p>Two parallax background layers generate procedural buildings that scroll at different speeds,
+                            creating genuine depth. It's not a static image—it's a living, breathing cyberpunk
+                            metropolis.</p>
+
+                        <h4>💥 Particle Explosions</h4>
+                        <p>Every jump triggers a burst of neon particles. Every crash? A dramatic magenta explosion that
+                            fills the screen. These micro-interactions elevate the entire experience.</p>
+
+                        <h4>🎚️ Difficulty Modes</h4>
+                        <ul>
+                            <li><strong>EASY:</strong> Larger gaps, slower gravity, perfect for warming up</li>
+                            <li><strong>MEDIUM:</strong> The balanced sweet spot</li>
+                            <li><strong>HARD:</strong> Tight gaps, aggressive gravity, for the masochists</li>
+                        </ul>
+
+                        <hr class="blog-divider">
+
+                        <h3>💡 Lessons Learned</h3>
+
+                        <h4>1. AI is a Multiplier, Not a Replacement</h4>
+                        <p>The AI didn't have the <em>vision</em>. I did. But it could translate that vision into code
+                            faster than I ever could alone. The creative direction, the "this doesn't feel right"
+                            moments, the final polish decisions—those were all human.</p>
+
+                        <h4>2. Iteration Speed is Everything</h4>
+                        <p>When you can try 10 ideas in the time it used to take to try 1, you naturally gravitate
+                            toward better solutions. Bad ideas fail fast. Good ideas get refined immediately.</p>
+
+                        <h4>3. Documentation Happens Naturally</h4>
+                        <p>Because I was explaining my intent to the AI constantly, I ended up with a clear mental model
+                            and—bonus—actual documentation that explains every class and design decision.</p>
+
+                        <h4>4. The Bar Has Been Raised</h4>
+                        <p>When you realize you can ship polished experiences in hours instead of weeks, you stop
+                            settling for "good enough." Every project now feels achievable.</p>
+
+                        <hr class="blog-divider">
+
+                        <h3>🔮 What's Next?</h3>
+                        <p>This is just the beginning. With AI as a development partner, a lot more games to come.</p>
+                        <p>The future of solo development isn't solo anymore. It's <strong>human + AI</strong>, moving
+                            at the speed of thought.</p>
+
+                        <hr class="blog-divider">
+
+                        <h3>🙏 Final Thoughts</h3>
+                        <p>If you're a developer reading this and you haven't tried AI-assisted coding yet—<strong>start
+                                today</strong>. It's not about replacing what you do. It's about <em>amplifying</em> it.
+                        </p>
+                        <p>I built a cyberpunk arcade game with:</p>
+                        <ul>
+                            <li>Canvas 2D rendering</li>
+                            <li>Object-oriented game architecture</li>
+                            <li>Particle systems</li>
+                            <li>Parallax scrolling</li>
+                            <li>Difficulty balancing</li>
+                            <li>Premium UI/UX</li>
+                            <li>Persistent high scores</li>
+                        </ul>
+                        <p>...in a single afternoon.</p>
+
+                        <p class="cta"><strong>What will YOU build?</strong><br><br>
+                            <a href="https://aishwarya27pb.github.io/NeoFlap_game/" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-primary">🎮 Play Neon Flap Now</a>
+                        </p>
+
+                        <div class="social-sharing">
+                            <span>Share this story:</span>
+                            <a href="#" class="share-btn" id="share-linkedin">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
+                                LinkedIn
+                            </a>
+                            <a href="#" class="share-btn" id="share-x">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                </svg>
+                                X
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer container" style="margin-bottom: 2rem;">
+            <p>&copy; 2026 Aishwarya P B. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+    <button id="scroll-top" class="btn-scroll-top" aria-label="Scroll to top">↑</button>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
